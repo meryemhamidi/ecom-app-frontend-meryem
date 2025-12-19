@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --app-bg: #f6f8fb;
+  --app-surface: #ffffff;
+  --app-text: #0f172a;
+  --app-muted: #64748b;
+  --app-border: rgba(15, 23, 42, 0.08);
+  --app-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+app-root {
+  display: block;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-weight: 750;
+}
+
+.text-muted {
+  color: var(--app-muted) !important;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid var(--app-border);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  color: #334155 !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.dropdown-menu {
+  border-radius: 12px;
+  border: 1px solid var(--app-border);
+  box-shadow: var(--app-shadow);
+}
+
+/* Layout helpers */
+.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 14px;
+  border: 1px solid var(--app-border);
+  box-shadow: var(--app-shadow);
+}
+
+.card-header {
+  font-weight: 700;
+  background: rgba(248, 250, 252, 0.9);
+  border-bottom: 1px solid var(--app-border);
+}
+
+/* Tables */
+.table {
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+}
+
+.table thead th {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+  color: #475569;
+  background: rgba(248, 250, 252, 0.9);
+  border-bottom: 1px solid var(--app-border) !important;
+}
+
+.table td,
+.table th {
+  padding: 0.8rem 0.9rem;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.18);
+}
+
+.btn-info {
+  box-shadow: 0 10px 20px rgba(13, 202, 240, 0.18);
+}
+
+/* Forms */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border-color: var(--app-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
